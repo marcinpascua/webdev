@@ -1,0 +1,146 @@
+body{
+    background-color: aliceblue;
+    background-image: url(snacks.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-blend-mode: multiply;
+}
+
+.directions{
+    font-size: 14px;
+    font-style: italic;
+    font-family: 'Quicksand';
+    font-weight: 500;
+}
+
+input[type=checkbox]
+{
+    accent-color:  rgb(96, 96, 133);
+}
+
+.confirm{
+    font-size: 13px;
+    margin-top: 20px;
+}
+
+h1{
+    text-align: center;
+    font-size: 40px;
+    font-family: 'Raleway';
+    letter-spacing: 2px;
+    color: white;
+    background-color:rgb(53, 53, 78) ;
+    border-radius: 5px;
+    padding-top: 4px;
+    padding-bottom: 4px;
+}
+
+form{
+    position: relative;
+    align-items: center;
+    text-align: left;
+    background-color: white;
+    width: 50%;
+    border-radius: 7%;
+    border: solid 3px;
+    border-color: rgb(53, 53, 78);
+    padding: 50px;
+    padding-top: 15px;
+    padding-bottom: 50px;
+    margin: auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    font-family: 'Quicksand';
+}
+
+#fname{
+    font-family: 'Quicksand';
+    font-size: 13.5px;
+    padding-right: 150px;
+}
+
+#age{
+    font-family: 'Quicksand';
+    font-size: 13.5px;
+    padding-right: 90px;
+}
+
+.choice{
+    font-weight: 500;
+}
+
+input{
+    border-radius: 5px;
+    border: solid 1px;
+    padding: 3px;
+    font-size: 16px;
+    border-color: rgb(53, 53, 78);
+}
+
+input[type=radio]
+{
+    accent-color:  rgb(96, 96, 133);
+}
+
+textarea{
+    border-radius: 5px;
+    border: solid 1px;
+    padding-bottom: 25px;
+    padding-right:100px;
+    font-family: 'Quicksand';
+    border-color: rgb(53, 53, 78);
+}
+
+th{
+    font-size: 18px;
+    font-weight: 600;
+}
+
+#choice9{
+    font-family: 'Quicksand';
+    font-size: 13.5px;
+}
+
+table{
+    margin-bottom: 20px;
+    align-items: left;
+}
+
+select{
+    font-family: 'Quicksand';
+    font-weight: 900;
+    font-size: 15px;
+    border-color: rgb(53, 53, 78);
+}
+
+select option:checked{
+   background-color: rgb(96, 96, 133);;
+}
+
+label{
+    font-weight: 600;
+}
+
+.question{
+    margin-bottom: 20px;
+    font-size: 18px;
+}
+
+button{
+    background-color: rgb(96, 96, 133);
+    margin-top: 60px;
+    font-size: 16px;
+    color: white;
+    width: 100%;
+    padding: 13px;   
+    border: none;
+    border-radius: 10px;
+    text-align: center;
+}
+
+button:hover{
+    background-color: rgb(53, 53, 78);
+    cursor: pointer;
+}
+
+

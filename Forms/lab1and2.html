@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@100;200;300;400;500;600;700;800;900" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800;900" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="lab1and2.css">
+    <script src="lab1and2.js" defer></script>
+</head>
+<body>
+    <form>      
+        <h1>SURVEY FORM</h1>
+        
+        <div class="directions">
+            <p>Directions: Kindly fill out the form. Answer the following questions appropriately.</p>
+        </div>
+
+        <table>
+            <tr>
+                <th>Name:</th>
+                <td><input type="text" name="fname" id="fname" placeholder="Enter full name..." required></td>
+                <th>Age: <input type="text" name="age" id="age" placeholder="Enter age..." required></th>
+            </tr>
+
+            <tr>
+                <th>Sex:</th>
+                <td><label for="m"><input type="radio" name="fm" id="m">Male</label>
+                    <label for="fm"><input type="radio" name="fm" id="fm">Female</label>
+                </td>
+
+                <td>
+                    <select>
+                        <option value="d1" hidden>Department</option>
+                        <option value="d2">College of Computer Studies</option>
+                        <option value="d3">College of Allied Engineering</option>
+                        <option value="d4">College of Marine Engineering</option>
+                        <option value="d5">College of Marine Transportation</option>
+                        <option value="d6">College of Customs Administration</option>
+                        <option value="d8">College of Criminology</option>
+                        <option value="d9">College of Nursing</option>
+                        <option value="d10">College of Tourism and Management</option>
+                        <option value="d11">College of Business and Accountancy</option>
+                        <option value="d12">College of Teacher Education</option>
+                    </select>
+                </td>
+            </tr>
+        </table>
+
+        <div class="questions">
+            <div class="question">
+                <label>1. Do you like to eat snacks?<br></label>
+                <label for="c1" class="choice"><input type="radio" name="choice1" id="c1">Yes</label>
+                <label for="c1.2" class="choice"><input type="radio" name="choice1" id="c1.2">No<br></label>
+            </div>
+
+            <div class="question">
+                <label>2. Where do you buy your snacks?</label><br>
+                <label for="c2" class="choice"><input type="radio" name="choice2" id="c2">Inside UCLM campus<br></label>
+                <label for="c2.1" class="choice"><input type="radio" name="choice2" id="c2.1">Outside UCLM campus<br></label>
+            </div>
+
+            <div class="question">
+                <label>3. How much do you usually spend on your snacks?</label><br>
+                <label for="c3" class="choice"><input type="radio" name="choice3" id="c3">Below 10 pesos<br></label>
+                <label for="c3.1" class="choice"><input type="radio" name="choice3" id="c3.1">10 pesos - 20 pesos<br></label>
+                <label for="c3.2" class="choice"><input type="radio" name="choice3" id="c3.2">More than 20 pesos<br></label>
+            </div>
+
+            <div class="question">
+                <label>4. What snacks do you usually buy? (Select all that apply)</label><br>
+                <label for="c4" class="choice"><input type="radio" name="choice4" id="c4">Bananacue<br></label>
+                <label for="c4.1" class="choice"><input type="radio" name="choice5" id="c4.1">Turon<br></label>
+                <label for="c4.2" class="choice"><input type="radio" name="choice6" id="c4.2">Pinaypay<br></label>
+                <label for="c4.3" class="choice"><input type="radio" name="choice7" id="c4.3">Kwek-kwek<br></label>
+                <label for="c4.4" class="choice"><input type="radio" name="choice8" id="c4.4">Fishball<br></label>
+                <label for="c4.5" class="choice"><input type="radio" name="choice9" id="c4.5">Others: <input type="text" placeholder="Please specify..." id="choice9"><br></label>
+            </div>
+
+            <div class="question">
+                <label>5. Are you satisfied with the price of the snacks that you buy?</label><br>
+                <label for="c10" class="choice"><input type="radio" name="choice10" id="c10">Yes</label>
+                <label for="c10.1" class="choice"><input type="radio" name="choice10" id="c10.1">No<br></label>
+            </div>
+
+            <div class="reason">
+                <p>If your answer is no, kindly tell the reason.</p>
+                <textarea placeholder="Provide reason..."></textarea>
+            </div>  
+            
+        </div>
+        
+        <button onclick="submitButton()">Submit</button>
+        
+        <div class="confirm">
+            <input type="checkbox">By clicking, you agree to share your information with us.
+        </div>
+    </form>
+</body>
+</html>
