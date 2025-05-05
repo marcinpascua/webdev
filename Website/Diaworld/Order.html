@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="assets/css/style8.css">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800;900" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@100;200;300;400;500;600;700;800;900" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas Neue:wght@100;200;300;400;500;600;700;800;900" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Order here | Diaworld</title>
+    <script src="assets/javascript/script8.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <nav class="left">
+            <a href="About.html" target="_self">About</a>
+            <a href="Home.html" target="_self">Home</a>
+        </nav>   
+        
+        <h1>DIAWORLD</h1>
+        
+        <nav class="right">
+            <a href="Jewelry.html" target="_self">Jewelry</a>
+            <a href="Order.html" target="_self">Order</a>
+        </nav>
+    </header>
+        
+    <main>
+        <form action="Confirm.html" method="post" target="_self">
+            <div id="survey">
+                <h2>ORDER HERE</h2>
+
+                <div class="firstname">
+                    <label for="fname" class="fname">First Name </label>
+                    <input type="text" placeholder="Enter first name" name="fname" id="fname" required>
+                </div>
+
+                <div class="lastname">
+                    <label for="lname" class="lname">Last Name </label>
+                    <input type="text" name="lname" id="lname" placeholder="Enter last name" required><br>
+                </div>
+
+                <div class="contact">
+                    <label for="address" class="address">Home Address </label></th>
+                    <input type="text" placeholder="Enter home address" name="address" id="address" required>
+                </div>
+
+                <table>
+                    <tr>
+                        <th><label for="num" class="num">Contact Number </label></th>
+                        <th><label for="email" class="email">Email </label></th>
+                    </tr>
+                    
+                    <tr>
+                        <td><input type="number" placeholder="Enter contact number"  id="num" required><br></td>
+                        <td><input type="email" placeholder="Enter email" name="email" id="email" required><br></td>
+                    </tr>
+                </table>
+                
+                <div class="mop">
+                    <label>Mode of Payment: </label>
+                    <input type="radio" id="dc" name="mode" value="Debit/ Credit Card" class="mode" required>
+                    <label for="dc">Debit/ Credit Card</label>
+                    <input type="radio" id="cod" name="mode" value="Cash on Delivery" class="mode" required>
+                    <label for="cod">Cash on Delivery</label>
+                </div>
+
+                <div class="order">
+                    <label for="order" id="state">State your order:</label><br>
+                    <textarea placeholder="example: 1 pc. of N#1101 (also state length in cm)" required rows="7" id="order"></textarea>
+                </div>  
+            </div>
+    
+            <button onclick="getInfo()" value="submit" id="submit" name="submit" href="Confirm.html">Submit</button>
+        </form>
+    </main>
+    
+    <footer>
+        <p class="contact">Contact Us</a>
+        <a class ="call" href=tel:09980015344><i class="fa-solid fa-phone"></i>+63 (998) 001 5344</a>
+        <hr>
+        <ul>
+            <li><i class="fa-brands fa-facebook-f"></i>  Diaworld</li><br>
+            <li><i class="fa-brands fa-instagram"></i>  @diaworld</li><br>
+            <li><i class="fa-brands fa-tiktok"></i>  @dia_world</li><br>
+            <li><i class="fa-brands fa-twitter"></i>  @diaworld_</li><br>
+            <li><i class="fa-solid fa-envelope"></i> diaworld@gmail.com</li>
+        </ul>
+        <p class="copyright">©Copyright. Diaworld company. All rights reserved.</p>
+    </footer>
+</body>
+</html>

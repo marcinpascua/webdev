@@ -1,0 +1,277 @@
+body{
+    margin:0px;  
+    background: linear-gradient(90deg, rgba(0,0,14,1) 44%, rgba(121,99,9,1) 100%);
+}
+
+/* HEADER STYLES */
+header{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+    margin-bottom:10px;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+h1{
+    font-size: 30px;
+    font-family: 'Raleway';
+    font-weight:bold;
+    letter-spacing: 9px;
+    text-align: center;
+    color:white;
+}
+
+header a{ 
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    font-size: 17px;
+    font-weight: 500;
+    font-family: 'Quicksand';
+    margin:30px;
+    position: relative;
+}
+
+header a::after {
+	content: "";
+	width: 0;
+	height: 1.5px;
+	position: absolute;
+	left: 0;
+	right: 0;
+	bottom: -5px;
+	margin: auto;
+	background: rgb(196, 159, 10);
+	transition: width 0.1s ease-in-out;
+}
+
+header a:hover::after {
+	width: 100%;
+}
+
+/*MAIN STYLES*/
+.top{
+    padding: 55px;
+}
+
+h2{
+    margin-top: 100px;
+    margin-bottom: 0;
+    font-family: 'Raleway';
+    font-size: 33px;
+    color: white;
+}
+
+.description{
+    text-align: left;
+    font-family: 'Raleway';
+    color: rgb(255, 219, 151);
+    font-size: 20px;
+    margin-bottom: 0;
+} 
+
+.pic{
+    width: 300px;
+    height: 300px;
+    float: left;
+    margin-right: 30px;
+    margin-top: 40px;
+    border-radius: 50%;
+    border: 4px solid rgba(121,99,9,1);
+    position: relative;
+}
+
+#icon{
+    color: rgb(255, 219, 151);
+    font-size: 25px;
+}
+
+ul.info{
+    justify-content: right;
+    letter-spacing: 45px;
+    margin-top: 60px;
+    margin-bottom: 0;
+}
+
+.about{
+    display: inline;
+    text-align: left;
+    color: white;
+    font-size: 25px;
+    font-weight: 300;
+}
+
+.infos{
+    background-color:white;
+}
+
+.me{
+    font-size: 18px;
+    line-height: 1.5em;
+}
+
+table{
+    text-align: justify;
+    width: 100%;
+    padding: 70px;
+    padding-top: 70px;
+    border: none;
+}
+
+ul.skills{
+    display: inline;
+    text-align: left;
+    margin-left: 70px;
+    font-family: 'Quicksand';
+    font-size: 20px;
+    line-height:1.5em;
+}
+
+ul.experiences{
+    display: inline;
+    text-align: left;
+    font-family: 'Quicksand';
+    font-size: 20px;
+    line-height:1.5em;
+}
+
+ul.seminar{
+    display: inline;
+    text-align: left;
+    font-family: 'Quicksand';
+    font-size: 20px;
+    line-height:1.5em;  
+}
+
+th{
+    font-family: 'Raleway';
+    font-weight: 800;
+    font-size: 40px;
+    color: rgb(53, 53, 79);
+    letter-spacing: 3px;
+}
+
+td{
+    font-family: 'Quicksand';
+    font-size: 20px;
+    padding-bottom: 50px;
+}
+
+dt{
+    font-weight: 600;
+}
+
+#icon2{
+    color: rgb(53, 53, 79);
+}
+
+.secondrow{
+    text-decoration: overline 1.8px rgb(53, 53, 79);
+}
+
+.learnmore{
+    font-family: 'Quicksand';
+    font-weight: 400;
+    font-size: 20px;
+    color: white;
+    align-items: center;
+    text-align: center;
+    cursor: pointer;
+}
+
+.lrn{
+    margin-bottom: 10px;
+    animation: animate 2s infinite;
+    color: white;
+    text-decoration: none;
+    display: block;
+    font-size: 18.5px;
+}
+
+#down{
+    color: white;
+    margin-bottom: 50px;
+    animation: animate 2s infinite;
+}
+
+@keyframes animate{
+    0%
+    {
+        opacity: 0;
+    }
+}
+
+.buttontext{
+    text-align: center;
+}
+
+.circle{
+    position: absolute;
+    width: 60px;
+    height:60px;
+    background: #000;
+    border-radius: 50px;
+    left: 0;
+    top: -2px;
+    z-index: 2;
+    transition: .5s cubic-bezier(1,0,8,1);
+}
+
+/* FOOTER STYLES*/
+footer{
+    background-color: rgb(211, 211, 211);
+    padding:1px;
+}
+p.contact{
+    font-family: 'Quicksand';
+    font-weight: 500;
+    color: rgb(53, 48, 48);
+    font-size: 50px;
+    margin-left: 50px;
+    margin-top: 70px;
+    margin-bottom: 0;
+}
+
+a.call{
+    font-family: 'Quicksand';
+    font-size: 20px;
+    font-style: italic;
+    margin-left: 50px;
+    text-decoration: none;
+    color:rgb(53, 48, 48);
+}
+
+hr{
+    display: flex;
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-top: 30px;
+}
+
+ul{
+    font-size: 15px;
+    font-family: 'Quicksand';
+    font-weight:500 ;
+    justify-content: space-evenly;
+    list-style-type:none;
+    display: flex;
+    margin-top: 20px;
+    margin-bottom: 70px;
+    text-align: center;
+    color: rgb(53, 48, 48);
+}
+
+i{
+    color:rgb(44, 39, 39);
+}
+
+p.copyright{
+    font-family: 'Quicksand';
+    font-size:12px;
+    margin-top:30px;
+    margin-bottom: 50px;
+    text-align: center;
+    color: rgb(53, 48, 48);
+}
+

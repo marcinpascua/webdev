@@ -1,0 +1,265 @@
+body{
+    background-color: #636a82;
+    background-image: url(../img/pic.jpg);
+    background-blend-mode: multiply;
+    background-size:cover;
+    background-repeat:no-repeat;
+    background-position: center;
+    position: relative;
+}
+
+/* HEADER STYLES */
+header{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+    margin-bottom:10px;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+h1{
+    font-size: 30px;
+    font-family: 'Raleway';
+    font-weight:bold;
+    letter-spacing: 9px;
+    text-align: center;
+    color: white;
+}
+
+img.logo{
+    width: 70px;
+    height: 70px;
+}
+
+header a{ 
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    font-size: 17px;
+    font-weight: 500;
+    font-family: 'Quicksand';
+    margin:30px;
+    position: relative;
+}
+
+header a::after {
+	content: "";
+	width: 0;
+	height: 1.5px;
+	position: absolute;
+	left: 0;
+	right: 0;
+	bottom: -5px;
+	margin: auto;
+	background: rgb(196, 159, 10);
+	transition: width 0.1s ease-in-out;
+}
+
+header a:hover::after {
+	width: 100%;
+}
+
+/*MAIN STYLES*/
+form{
+    position: relative;
+    width: 50%;
+    background: none;
+    border-radius: 15px;
+    border: solid 2px;
+    border-color: white;
+    margin: auto;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    padding: 30px;
+    line-height: 3em;
+    display: block;
+}
+
+#survey{
+    margin-left:20px;
+    margin-right:20px;
+}
+  
+h2{
+    font-family: 'Raleway';
+    font-size: 20px;
+    text-align: center;
+    letter-spacing: 8px;
+    font-weight: 800;
+    color:rgb(207, 188, 102);
+}
+
+#state{
+    color:rgb(207, 188, 102);
+    font-family: 'Raleway';
+    font-weight: 550;
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+
+label{
+    font-family: 'Raleway';
+    font-weight: 550;
+    font-size: 16px;
+    color: white;
+}
+
+#fname{
+    border-radius: 7px;
+    width: 100%;
+    height: 33px;
+}
+
+#lname{
+    border-radius: 7px;
+    width: 100%;
+    height: 33px;
+}
+
+#num{
+    border-radius: 7px;
+    width: 90%;
+    height: 33px;
+    text-align: left;
+}
+
+
+table{
+    width: 100%;
+}
+
+th{
+    width: 50%;
+    text-align: left;
+}
+
+td{
+    width: 50%;
+}
+
+#email{
+    text-align: left;
+    border-radius: 7px;
+    width: 100%;
+    height: 33px;
+    margin-right: 10px;
+}
+
+#address{
+    width: 100%;
+    border-radius: 7px;
+    height: 33px;
+}
+
+#cod{
+    margin-left: 30px;
+}
+
+#dc{
+    margin-left: 30px;
+}
+
+textarea{
+    width: 100%;
+    font-family: 'Raleway';
+    border-radius: 7px;
+}
+
+input[type=radio]{
+    accent-color: rgb(214, 193, 88);
+}
+
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button {  
+   opacity: 0;
+}
+
+input::placeholder{
+    font-family: 'Quicksand';
+}
+
+.order{
+    margin-top: 0;
+    margin-bottom: 30px;
+}
+
+#submit{
+    background-color: rgb(140, 127, 62);
+    cursor: pointer;
+    width: 18%;
+    height: 40px;
+    border-radius: 7px;
+    font-size: 15px;
+    font-weight: 500;
+    font-family: 'Raleway';
+    margin: auto;
+    border: solid .5px;
+    border-color: none ;
+    color: white;
+    display: block;
+}
+
+
+#submit:hover {
+    background: rgb(72, 60, 0);
+}
+
+/* FOOTER STYLES*/
+footer{
+    background-color:none;
+    padding:1px;
+}
+
+p.contact{
+    font-family: 'Quicksand';
+    font-weight: 400;
+    color: white;
+    font-size: 50px;
+    margin-left: 50px;
+    margin-top: 70px;
+    margin-bottom: 0;
+}
+
+a.call{
+    font-family: 'Quicksand';
+    font-size: 20px;
+    font-style: italic;
+    margin-left: 50px;
+    text-decoration: none;
+    color:white;
+}
+
+hr{
+    display: flex;
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-top: 30px;
+}
+
+ul{
+    font-size: 15px;
+    font-family: 'Quicksand';
+    justify-content: space-evenly;
+    list-style-type:none;
+    display: flex;
+    margin-top: 20px;
+    margin-bottom: 70px;
+    text-align: center;
+    color: white;
+    font-weight: 300;
+}
+
+i{
+    color:white
+}
+
+p.copyright{
+    font-family: 'Quicksand';
+    font-weight: 300;
+    font-size:12px;
+    margin-top:30px;
+    margin-bottom: 50px;
+    text-align: center;
+    color: white
+}
